@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale-Down-Animation</title>
+    <style>
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.box:hover{
+    animation: scale-down-center 4s linear;
+}
+.scale-down-center{-webkit-animation:scale-down-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:scale-down-center .4s cubic-bezier(.25,.46,.45,.94) both}
+@keyframes scale-down-center{0%{-webkit-transform:scale(1);transform:scale(1)}
+
+50%{background-color: black;}
+60%{background-color: rgb(188, 226, 17);}
+70%{background-color: rgb(55, 19, 219);}
+100%{-webkit-transform:scale(.5);transform:scale(.5)}}
+
+   </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

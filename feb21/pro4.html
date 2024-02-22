@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rotate-scale-up </title>
+    <style>
+.box{
+    height: 300px;
+    width: 300px;
+    background-color: red;
+}
+.box:hover{
+    animation: rotate-scale-up  4s infinite;
+}
+.rotate-scale-up{-webkit-animation:rotate-scale-up .65s linear both;animation:rotate-scale-up .65s linear both}
+
+
+ @keyframes rotate-scale-up{0%{-webkit-transform:scale(1) rotateZ(0);transform:scale(1) rotateZ(0)}
+ 50%{-webkit-transform:scale(2) rotateZ(180deg);transform:scale(2) rotateZ(180deg)}
+ 60%{
+    background-color: blueviolet;
+ }
+ 70%{
+    background-color: rgb(84, 81, 87);
+ }
+ 80%{
+    background-color: rgb(9, 226, 92);
+ }
+ 100%{-webkit-transform:scale(1) rotateZ(360deg);transform:scale(1) rotateZ(360deg)}}
+
+   </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

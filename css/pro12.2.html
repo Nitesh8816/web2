@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+.box1 img{
+    height: 300px;
+    width: 300px;
+    position:absolute;
+    top:100px;
+    left: 100px;
+    z-index: 1;
+}
+.box2 img{
+    height: 300px;
+    width: 300px;
+    position:absolute;
+    top:100px;
+    left: 100px;
+    z-index: 2;
+    border-top-right-radius: 30%;
+}
+
+
+
+.box1 img:hover, .box2 img:hover{
+    z-index: 5;
+}
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <img src="n1.jpg" alt="">
+    </div>
+    <div class="box2">
+        <img src="n2.jpg" alt="">
+    </div>
+
+   
+    </div>
+</body>
+</html>

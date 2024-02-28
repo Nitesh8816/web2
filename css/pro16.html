@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+.main-menu{
+    list-style: none;
+    margin-top: 100px;
+    position: relative;
+}
+.main-menu li{
+display: inline-block;
+padding: 30px;
+background-color: blue;
+
+}
+.main-menu a{
+    font-size: 30px;
+    text-decoration:none ;
+    color:azure;
+}
+.main-menu li a:hover{
+    background-color:rgb(68, 50, 231) ;
+    text-decoration: underline;
+}
+.sub-menu{
+list-style: none;
+display: none;
+}
+.sub-menu li{
+    display: block;
+  background-color: blueviolet;
+  color:wheat;
+  padding: 20px;
+}
+.main-menu li:hover .sub-menu{
+    display: block;
+    position: absolute;
+
+}
+.sub-menu{
+    top:75px;
+    left:232px;
+}
+.sub-menu2{
+    display: none;
+}
+.sub-menu2 li{
+    background-color: aqua;
+    color:wheat;
+    padding: 20px;
+    width: 250px;
+}
+.sub-menu li:hover .sub-menu2{
+    display: block;
+    position: absolute;
+}
+    </style>
+</head>
+<body>
+    <ul class="main-menu">
+        <li><a href=""> Home</a> </li>
+        <li><a href="">About</a></li>
+        <li><a href=""> Course</a>
+        <ul class="sub-menu">
+            <li><a href="">Web Designing</a></li>
+            <li><a href="">Web Developer</a></li>
+            <li><a href="">Digital Marketing</a>
+            <ul class="sub-menu2">
+                <li><a href="">SEO</a></li>
+                <li><a href="">SMO</a></li>
+                <li><a href="">SMM</a></li>
+            </ul>
+            </li>
+            <li><a href="">Data Analtics</a></li>
+        </ul>
+        </li>
+        <li><a href=""> Services</a> </li>
+        <li><a href=""> Legal</a> </li>
+    </ul>
+</body>
+</html>
